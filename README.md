@@ -21,6 +21,7 @@ Projeto criado para prática e absorção de conhecimentos no Django framework.
 
 - **Python 3.10+**
 - **Django Framework**
+- **HTML & CSS**
 
 ---
 

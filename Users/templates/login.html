@@ -1,0 +1,51 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Florum</title>
+  <link rel="stylesheet" href="{%static 'style_login.css'%}" />
+</head>
+<body>
+  <img src="{%static 'logo.png'%}" alt="logo" class="logomarca" />
+  <h2 class="welcome">Bem-Vindo ao Restricted Area | By github.com/Dsouza77
+  </h2>
+  <div class="login">
+    <form action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+      <h1>Login</h1>
+
+      <div class="input-mail">
+        <label for="email">Endereço de e-mail</label>
+        <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário" />
+      </div>
+
+      <div class="input-pass">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
+      </div>
+
+      <div class="lembrar">
+        <label>
+          <input type="checkbox" />
+          Lembrar-me
+        </label>
+        <a href="https://www.linkedin.com/in/davi-souza-b6251522b/" target="_blank">Esqueceu sua senha?</a>
+      </div>
+
+      <button type="submit" class="botao" value="logar">Entrar</button>
+
+      <div class="cadastrar">
+        <p>
+          Novo no Florum? <a href="{% url 'cadastro' %}" target="_blank">Crie uma conta</a>
+        </p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: "Nunito", sans-serif;
+}
+
+.logomarca {
+    max-width: 15rem;
+    height: 5rem;
+    margin-bottom: 10px;
+    position: relative;
+    top: -40px;
+}
+
+.welcome {
+    width: 400px;
+    color: #FF0000;
+    font-family: "Fredoka", sans-serif; 
+    font-size: 15px;                    
+    font-weight: 500;                   
+    text-align: center;                 
+    position: relative;
+    top: -40px;
+    margin-bottom: 10px;
+}
+
+.login {
+    width: 400px;
+    background-color: #000000;
+    border: 3px solid #FF0000;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 4px 6px 0px 0px #FF0000;
+    position: relative;  
+    top: -40px;          
+    margin-top: 0;       
+}
+
+.login label {
+    color: #FF0000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.login h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #FF0000;
+    margin-bottom: 25px;
+}
+
+.input-mail,
+.input-pass {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 100%;
+    height: 40px;
+    background: #000000;
+    border: 2px solid #FF0000;
+    border-radius: 6px;
+    padding: 0 10px;
+    color: #FF0000;
+    font-size: 16px;
+}
+
+.login input::placeholder {
+    color: #FF0000;
+}
+
+.lembrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.lembrar label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #FF0000;
+    white-space: nowrap;
+}
+
+.lembrar label input {
+    accent-color: #FF0000;
+}
+
+.lembrar a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.lembrar a:hover {
+    text-decoration: underline;
+}
+
+.login .botao {
+    width: 100%;
+    height: 40px;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 6px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login .botao:hover {
+    background-color: #990000;
+}
+
+.cadastrar {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cadastrar p {
+    color: #FF0000; /* <-- adicionado para o texto ficar vermelho */
+}
+
+.cadastrar p a {
+    color: #FF0000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cadastrar p a:hover {
+    text-decoration: underline;
+}
